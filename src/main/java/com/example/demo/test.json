@@ -1,0 +1,55 @@
+{
+  "type": "combobox",
+  "typeOptions": [
+    {
+      "name": "inspect rotor",
+      "postActions": [
+        {
+          "fillByUser": true,
+          "type": {
+            "name": "CHANGE_CONDITION_INDICATOR",
+            "description": "Change condition indicator",
+            "multiply": false
+          }
+        },
+        {
+          "type": {
+            "name": "ADD_ANOTHER_TEMPLATE",
+            "description": "Add tasks from template",
+            "multiply": true
+          },
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "inspect oil level",
+      "postActions": [
+        {
+          "type": {
+            "name": "CHANGE_CONDITION_INDICATOR",
+            "description": "Change condition indicator",
+            "multiply": false
+          },
+          "fillByUser": true
+        },
+        {
+          "type": {
+            "name": "ADD_ANOTHER_TEMPLATE",
+            "description": "Add tasks from template",
+            "multiply": true
+          },
+          "value": 144
+        },
+        {
+          "type": {
+            "name": "ADD_ANOTHER_TEMPLATE",
+            "description": "Add tasks from template",
+            "multiply": true
+          },
+          "value": 3
+        }
+      ]
+    }
+  ]
+}
